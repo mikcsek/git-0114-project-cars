@@ -1,4 +1,4 @@
-const   btn = document.getElementById("btn");
+
 const   result = document.querySelector(".result");
 
 
@@ -20,7 +20,7 @@ async function getCars(){
 
 
 
-btn.addEventListener("click", async () =>   {
+window.addEventListener("load", async () =>   {
 
     const res = await fetch("cars.json");
     const data = await res.json();
